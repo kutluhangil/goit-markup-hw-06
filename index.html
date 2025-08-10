@@ -76,23 +76,31 @@
   </svg>
 
     <!-- Logo: Raleway font, uppercase, renk ayarlandı -->
-    <div class="container header-container"> <a class="logo" href="#"><span>WEB</span>Studio</a>
-      <!-- Logo: Raleway font, uppercase, renk ayarlandı -->
-      <nav class="main-nav">
+    <div class="container header-container">
+      <a class="logo" href="#"><span>WEB</span>Studio</a>
+      
+      <!-- Primary navigation (hidden on mobile) -->
+      <nav class="main-nav" aria-label="Primary">
         <ul class="nav-list">
-          <li><a href="#" class="nav-link">Studio</a></li>
+          <li><a href="#" class="nav-link current">Studio</a></li>
           <li><a href="#" class="nav-link">Portfolio</a></li>
           <li><a href="#" class="nav-link">Contacts</a></li>
         </ul>
       </nav>
 
-      <!-- İletişim bilgileri: font-size, hover durumu eklendi -->
+      <!-- Contact info (hidden on mobile) -->
       <address class="contact-address">
         <ul class="contact-list">
           <li><a class="email-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="phone-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+
+      <!-- Mobile menu toggle checkbox -->
+      <input type="checkbox" id="mobile-menu-toggle" class="visually-hidden">
+      <label for="mobile-menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+        <span class="menu-icon"></span>
+      </label>
     </div>
   </header>
 
@@ -151,7 +159,7 @@
       <h2 class="section-title">Our Team</h2>
       <ul class="team-list">
         <li class="team-member-card">
-          <img src="images/team-1.jpg" width="264" alt="Mark Guerrero - Product Designer">
+          <img src="images/team-1.jpg" srcset="images/team-1.jpg 1x, images/team-1.jpg 2x" width="264" alt="Mark Guerrero - Product Designer">
           <div class="member-info">
             <h3>Mark Guerrero</h3>
             <p>Product Designer</p>
@@ -180,7 +188,7 @@
           </div>
         </li>
         <li class="team-member-card">
-          <img src="images/team-2.jpg" width="264" alt="Tom Ford - Frontend Developer">
+          <img src="images/team-2.jpg" srcset="images/team-2.jpg 1x, images/team-2.jpg 2x" width="264" alt="Tom Ford - Frontend Developer">
           <div class="member-info">
             <h3>Tom Ford</h3>
             <p>Frontend Developer</p>
@@ -209,7 +217,7 @@
           </div>
         </li>
         <li class="team-member-card">
-          <img src="images/team-3.jpg" width="264" alt="Camila Garcia - Marketing">
+          <img src="images/team-3.jpg" srcset="images/team-3.jpg 1x, images/team-3.jpg 2x" width="264" alt="Camila Garcia - Marketing">
           <div class="member-info">
             <h3>Camila Garcia</h3>
             <p>Marketing</p>
@@ -238,7 +246,7 @@
           </div>
         </li>
         <li class="team-member-card">
-          <img src="images/team-4.jpg" width="264" alt="Daniel Wilson - UI Designer">
+          <img src="images/team-4.jpg" srcset="images/team-4.jpg 1x, images/team-4.jpg 2x" width="264" alt="Daniel Wilson - UI Designer">
           <div class="member-info">
             <h3>Daniel Wilson</h3>
             <p>UI Designer</p>
@@ -277,7 +285,7 @@
         <ul class="portfolio-list">
           <li class="portfolio-item">
             <div class="portfolio-image-wrapper">
-              <img src="images/portfolio-5.jpg" width="360" alt="Banking App - App">
+              <img src="images/portfolio-5.jpg" srcset="images/portfolio-5.jpg 1x, images/portfolio-5.jpg 2x" width="360" alt="Banking App - App">
               <div class="overlay-content">
                 <p>14 Stylish and User-Friendly App Design Concepts for Product Designers and Mobile Developers.</p>
               </div>
@@ -289,7 +297,7 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-wrapper">
-            <img src="images/portfolio-4.jpg" width="360" alt="Cashless Payment - Marketing">
+            <img src="images/portfolio-4.jpg" srcset="images/portfolio-4.jpg 1x, images/portfolio-4.jpg 2x" width="360" alt="Cashless Payment - Marketing">
             <div class="overlay-content">
               <p>14 Stylish and User-Friendly App Design Concepts for Product Designers and Mobile Developers.</p>
               </div>
@@ -301,7 +309,7 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-wrapper">
-            <img src="images/portfolio-3.jpg" width="360" alt="Meditation App - App">
+            <img src="images/portfolio-3.jpg" srcset="images/portfolio-3.jpg 1x, images/portfolio-3.jpg 2x" width="360" alt="Meditation App - App">
             <div class="overlay-content">
               <p>14 Stylish and User-Friendly App Design Concepts for Product Designers and Mobile Developers.</p>
               </div>
@@ -313,7 +321,7 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-wrapper">
-            <img src="images/portfolio-2.jpg" width="360" alt="Taxi Service - Marketing">
+            <img src="images/portfolio-2.jpg" srcset="images/portfolio-2.jpg 1x, images/portfolio-2.jpg 2x" width="360" alt="Taxi Service - Marketing">
             <div class="overlay-content">
               <p>14 Stylish and User-Friendly App Design Concepts for Product Designers and Mobile Developers.</p>
               </div>
@@ -325,7 +333,7 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-wrapper">
-            <img src="images/portfolio-1.jpg" width="360" alt="Screen Illustrations - Design">
+            <img src="images/portfolio-1.jpg" srcset="images/portfolio-1.jpg 1x, images/portfolio-1.jpg 2x" width="360" alt="Screen Illustrations - Design">
             <div class="overlay-content">
               <p>14 Stylish and User-Friendly App Design Concepts for Product Designers and Mobile Developers.</p>
               </div>
@@ -337,7 +345,7 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-wrapper">
-            <img src="images/portfolio-6.jpg" width="360" alt="Online Courses - Marketing">
+            <img src="images/portfolio-6.jpg" srcset="images/portfolio-6.jpg 1x, images/portfolio-6.jpg 2x" width="360" alt="Online Courses - Marketing">
             <div class="overlay-content">
               <p>14 Stylish and User-Friendly App Design Concepts for Product Designers and Mobile Developers.</p>
               </div>
@@ -409,6 +417,48 @@
   </div>
 </footer>
 
+<!-- Mobile menu overlay -->
+<div class="mobile-menu">
+  <div class="mobile-menu__inner">
+    <label for="mobile-menu-toggle" class="menu-close" aria-label="Close menu">×</label>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <ul class="mobile-nav-list">
+        <li><a href="#" class="mobile-nav-link current">Studio</a></li>
+        <li><a href="#" class="mobile-nav-link">Portfolio</a></li>
+        <li><a href="#" class="mobile-nav-link">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-contacts">
+      <a class="mobile-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+      <a class="mobile-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </div>
+    <ul class="mobile-socials">
+      <li>
+        <a href="#" class="social-link">
+          <svg class="social-icon" width="24" height="24"><use xlink:href="#icon-instagram"></use></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="social-link">
+          <svg class="social-icon" width="24" height="24"><use xlink:href="#icon-twitter"></use></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="social-link">
+          <svg class="social-icon" width="24" height="24"><use xlink:href="#icon-facebook"></use></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="social-link">
+          <svg class="social-icon" width="24" height="24"><use xlink:href="#icon-linkedin"></use></svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  
+</div>
+
 <!-- Modal Backdrop -->
 <input type="checkbox" id="modal-toggle" class="visually-hidden">
 <div class="backdrop">
@@ -479,6 +529,8 @@
     </form>
   </div>
 </div>
+
+
 
 </body>
 </html>
