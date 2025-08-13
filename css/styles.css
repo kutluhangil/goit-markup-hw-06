@@ -178,6 +178,8 @@ h3 {
   align-items: center;
   text-align: center;
   width: 100%;
+  max-width: 1440px; /* Maksimum genişlik sınırı */
+  margin: 0 auto; /* Ortalamak için */
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -1034,7 +1036,7 @@ button,
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* is-open sınıfı eklendiğinde menü görünür */
+/* C6: Checkbox işaretlendiğinde menü görünür */
 #mobile-menu-toggle:checked ~ .mobile-menu {
   transform: translateX(0);
 }
